@@ -1,16 +1,17 @@
 package com.bridgelabz.addressBook;
 
-public class PersonData {
+public class Person {
     private String firstName;
     private String lastName;
-    private String phoneNumber;
+    private long phoneNumber;
     private String state;
     private String city;
-    private String zipCode;
-    public PersonData(){
+    private int zipCode;
+    public Person(){
 
     }
-    public PersonData(String firstName, String lastName, String phoneNumber, String state, String city, String zipCode) {
+
+    public Person(String firstName, String lastName, long phoneNumber, String state, String city, int zipCode) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
@@ -35,11 +36,11 @@ public class PersonData {
         this.lastName = lastName;
     }
 
-    public String getPhoneNumber() {
+    public long getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
+    public void setPhoneNumber(long phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
@@ -59,23 +60,23 @@ public class PersonData {
         this.city = city;
     }
 
-    public String getZipCode() {
+    public int getZipCode() {
         return zipCode;
     }
 
-    public void setZipCode(String zipCode) {
+    public void setZipCode(int zipCode) {
         this.zipCode = zipCode;
     }
 
     @Override
     public String toString() {
-        return "PersonData{" +
+        return "Person{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", phoneNumber='" + phoneNumber + '\'' +
+                ", phoneNumber=" + phoneNumber +
                 ", state='" + state + '\'' +
                 ", city='" + city + '\'' +
-                ", zipCode='" + zipCode + '\'' +
+                ", zipCode=" + zipCode +
                 '}';
     }
 }

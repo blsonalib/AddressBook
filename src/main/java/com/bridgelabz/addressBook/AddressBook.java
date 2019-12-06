@@ -14,20 +14,34 @@ import java.util.List;
 
 public class AddressBook implements AddressBookDataInterface {
 
-    List<PersonData> personDataList = new ArrayList<>();
-    String filepath="/home/admin1/IdeaProjects/AddressBook/src/test/resources/Address.json";
+    List<Person> personDataList = new ArrayList<>();
+    String filepath = "/home/admin1/IdeaProjects/AddressBook/src/test/resources/Address.json";
 
     @Override
-    public boolean addPerson(PersonData personData) throws IOException {
-        personDataList.add(personData);
+    public boolean addPerson(Person person) throws IOException {
+        ArrayList<Person> personDataList = fileRead();
+        personDataList.add(person);
         writeIntoJson(personDataList);
         return true;
     }
 
     @Override
-    public boolean editPerson(PersonData personData, String firsName) throws IOException {
-        return false;
+    public boolean editPerson(Person person, String firstName) throws IOException {
+        ArrayList<Person> personDataList = fileRead();
+        for (Person personData1 : personDataList){
+            if(personData1.getFirstName().equals(firstName)){
+                personData1.setLastName(person.getLastName());
+                personData1.setState(person.getState());
+                personData1.setCity(person.getCity());
+                personData1.setZipCode(person.getZipCode());
+            }
+        }
+        writeIntoJson(personDataList);
+        return true;
+
+
     }
+
 
     @Override
     public boolean deletePerson(String firstName) throws IOException {
@@ -40,7 +54,7 @@ public class AddressBook implements AddressBookDataInterface {
     }
 
     @Override
-    public void sortEntriesByZip(PersonData personData) throws IOException {
+    public void sortEntriesByZip(Person personData) throws IOException {
 
     }
 
@@ -51,7 +65,7 @@ public class AddressBook implements AddressBookDataInterface {
 
 
   @Override
-  public void writeIntoJson(List<PersonData> personDataList) {
+  public void writeIntoJson(List<Person> personDataList) {
       Gson gson = new GsonBuilder().setPrettyPrinting().create();
       String json = gson.toJson(personDataList);
       try (FileWriter file = new FileWriter(filepath)) {
@@ -62,9 +76,9 @@ public class AddressBook implements AddressBookDataInterface {
       }
   }
        @Override
-        public ArrayList<PersonData> fileRead() throws IOException {
+        public ArrayList<Person> fileRead() throws IOException {
             ObjectMapper objectMapper = new ObjectMapper();
-            return objectMapper.readValue(new File(filepath), new TypeReference<ArrayList<PersonData>>() {
+            return objectMapper.readValue(new File(filepath), new TypeReference<ArrayList<Person>>() {
             });
         }
 
