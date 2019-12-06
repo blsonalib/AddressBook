@@ -45,5 +45,11 @@ public class AddressBookTest {
         boolean result=addressBookDataInterface.sortEntriesByName();
         Assert.assertEquals(true,result);
     }
+    @Test
+    public void givenAddressBook_ToSortEntriesByZip_ShoulsReturnTrue() throws IOException {
+        Person person=new Person("Neha","Renge",54765876,"Maha","Nagpur",56756);
+        boolean result=addressBookDataInterface.sortEntriesByZip(person);
+        Assert.assertEquals(true,result);
+    }
 
 }

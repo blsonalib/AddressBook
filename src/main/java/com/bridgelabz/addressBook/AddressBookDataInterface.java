@@ -9,7 +9,7 @@ public interface AddressBookDataInterface {
     public boolean editPerson(Person person, String firstName) throws IOException;
     public boolean deletePerson(String firstName)throws IOException;
     public boolean sortEntriesByName()throws IOException;
-    public void  sortEntriesByZip(Person personData) throws IOException;
+    public boolean  sortEntriesByZip(Person personData) throws IOException;
     public void printEntries() throws IOException;
     public void writeIntoJson(List<Person> personDataList)throws IOException;
     public ArrayList<Person>fileRead() throws IOException;

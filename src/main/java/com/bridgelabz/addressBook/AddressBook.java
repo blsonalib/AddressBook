@@ -51,14 +51,17 @@ public class AddressBook implements AddressBookDataInterface {
     public boolean sortEntriesByName() throws IOException {
         ArrayList<Person> personDataList = fileRead();
         personDataList.sort(Comparator.comparing(Person::getFirstName));
-        personDataList.forEach(System.out::println);
         writeIntoJson(personDataList);
         return true;
     }
 
     @Override
-    public void sortEntriesByZip(Person personData) throws IOException {
-
+    public boolean sortEntriesByZip(Person personData) throws IOException {
+        ArrayList<Person> personDataList = fileRead();
+        personDataList.sort(Comparator.comparing(Person::getZipCode));
+        personDataList.forEach(System.out::println);
+        writeIntoJson(personDataList);
+        return true;
     }
 
     @Override

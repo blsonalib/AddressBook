@@ -1,21 +1,5 @@
 [
   {
-    "firstName": "Lata",
-    "lastName": "Shahare",
-    "phoneNumber": 779898908,
-    "state": "Maharashtra",
-    "city": "jalgao",
-    "zipCode": 97778
-  },
-  {
-    "firstName": "Neha",
-    "lastName": "Renge",
-    "phoneNumber": 54765876,
-    "state": "MP",
-    "city": "Sivani",
-    "zipCode": 76687
-  },
-  {
     "firstName": "siya",
     "lastName": "Jain",
     "phoneNumber": 54765876,
@@ -30,5 +14,21 @@
     "state": "Maharashtra",
     "city": "nagpur",
     "zipCode": 56565
+  },
+  {
+    "firstName": "Neha",
+    "lastName": "Renge",
+    "phoneNumber": 54765876,
+    "state": "MP",
+    "city": "Sivani",
+    "zipCode": 76687
+  },
+  {
+    "firstName": "Lata",
+    "lastName": "Shahare",
+    "phoneNumber": 779898908,
+    "state": "Maharashtra",
+    "city": "jalgao",
+    "zipCode": 97778
   }
 ]
