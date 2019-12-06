@@ -65,7 +65,14 @@ public class AddressBook implements AddressBookDataInterface {
     }
 
     @Override
-    public void printEntries() throws IOException {
+    public boolean printEntries() throws IOException {
+        ArrayList<Person> personDataList = fileRead();
+        for(Person person2 : personDataList){
+            System.out.println("FirstName :\t"+person2.getFirstName()+"\t\t"+"LastName :\t"+person2.getLastName()+"\t\t"+"PhoneNumber :\t"+person2.getPhoneNumber());
+            System.out.println();
+            System.out.println("State :\t"+person2.getState()+"\t\t"+"City :\t"+person2.getCity()+ "\t\t"+"ZipCode :\t"+person2.getZipCode());
+        }
+        return true;
 
     }
 

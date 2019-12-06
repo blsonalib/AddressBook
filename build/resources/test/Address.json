@@ -1,19 +1,19 @@
 [
   {
+    "firstName": "siya",
+    "lastName": "Jain",
+    "phoneNumber": 54765876,
+    "state": "Maha",
+    "city": "Nagpur",
+    "zipCode": 7687
+  },
+  {
     "firstName": "Jiya",
     "lastName": "Raypure",
     "phoneNumber": 736756857,
     "state": "Maharashtra",
     "city": "nagpur",
     "zipCode": 56565
-  },
-  {
-    "firstName": "Lata",
-    "lastName": "Shahare",
-    "phoneNumber": 779898908,
-    "state": "Maharashtra",
-    "city": "jalgao",
-    "zipCode": 97778
   },
   {
     "firstName": "Neha",
@@ -24,11 +24,11 @@
     "zipCode": 76687
   },
   {
-    "firstName": "siya",
-    "lastName": "Jain",
-    "phoneNumber": 54765876,
-    "state": "Maha",
-    "city": "Nagpur",
-    "zipCode": 7687
+    "firstName": "Lata",
+    "lastName": "Shahare",
+    "phoneNumber": 779898908,
+    "state": "Maharashtra",
+    "city": "jalgao",
+    "zipCode": 97778
   }
 ]
