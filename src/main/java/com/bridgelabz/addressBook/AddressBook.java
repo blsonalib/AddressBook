@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 
@@ -38,20 +39,21 @@ public class AddressBook implements AddressBookDataInterface {
         writeIntoJson(personDataList);
         return true;
     }
-
-
     @Override
     public boolean deletePerson(String firstName) throws IOException {
         ArrayList<Person> personDataList = fileRead();
         personDataList.removeIf(person -> person.getFirstName().equals(firstName));
         writeIntoJson(personDataList);
-
         return true;
     }
 
     @Override
     public boolean sortEntriesByName() throws IOException {
-        return false;
+        ArrayList<Person> personDataList = fileRead();
+        personDataList.sort(Comparator.comparing(Person::getFirstName));
+        personDataList.forEach(System.out::println);
+        writeIntoJson(personDataList);
+        return true;
     }
 
     @Override

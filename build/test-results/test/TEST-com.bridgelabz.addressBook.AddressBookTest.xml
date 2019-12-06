@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.addressBook.AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T10:35:44" hostname="admin1-desktop" time="0.194">
+<testsuite name="com.bridgelabz.addressBook.AddressBookTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2019-12-06T11:11:17" hostname="admin1-desktop" time="0.214">
   <properties/>
-  <testcase name="givenAddressBook_ToDeletePersonDetails_ShouldReturnTrue" classname="com.bridgelabz.addressBook.AddressBookTest" time="0.194"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="givenAddressBook_ToEditPersonDetails_ShouldReturnTrue" classname="com.bridgelabz.addressBook.AddressBookTest" time="0.189"/>
+  <testcase name="givenAddressBook_ToAddPerson3_ShouldReturnTrue" classname="com.bridgelabz.addressBook.AddressBookTest" time="0.003"/>
+  <testcase name="givenAddressBook_ToAddPerson2_ShouldReturnTrue" classname="com.bridgelabz.addressBook.AddressBookTest" time="0.003"/>
+  <testcase name="givenAddressBook_ToSortEntriesByName_ShouldReturnTrue" classname="com.bridgelabz.addressBook.AddressBookTest" time="0.009"/>
+  <testcase name="givenAddressBook_ToDeletePersonDetails_ShouldReturnTrue" classname="com.bridgelabz.addressBook.AddressBookTest" time="0.006"/>
+  <testcase name="givenAddressBook_ToAddPerson1_ShouldReturnTrue" classname="com.bridgelabz.addressBook.AddressBookTest" time="0.003"/>
+  <system-out><![CDATA[Person{firstName='Lata', lastName='Shahare', phoneNumber=779898908, state='Maharashtra', city='jalgao', zipCode=77778}
+Person{firstName='Lata', lastName='Shahare', phoneNumber=779898908, state='Maharashtra', city='jalgao', zipCode=97778}
+Person{firstName='Lata', lastName='Shahare', phoneNumber=779898908, state='Maharashtra', city='jalgao', zipCode=97778}
+Person{firstName='Neha', lastName='Renge', phoneNumber=54765876, state='MP', city='Sivani', zipCode=76687}
+Person{firstName='siya', lastName='Jain', phoneNumber=54765876, state='Maha', city='Nagpur', zipCode=7687}
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

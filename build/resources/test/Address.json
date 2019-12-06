@@ -1,5 +1,13 @@
 [
   {
+    "firstName": "Lata",
+    "lastName": "Shahare",
+    "phoneNumber": 779898908,
+    "state": "Maharashtra",
+    "city": "jalgao",
+    "zipCode": 77778
+  },
+  {
     "firstName": "siya",
     "lastName": "Jain",
     "phoneNumber": 54765876,
@@ -8,11 +16,11 @@
     "zipCode": 7687
   },
   {
-    "firstName": "Jiya",
-    "lastName": "Raypure",
-    "phoneNumber": 736756857,
+    "firstName": "Lata",
+    "lastName": "Shahare",
+    "phoneNumber": 779898908,
     "state": "Maharashtra",
-    "city": "nagpur",
-    "zipCode": 56565
+    "city": "jalgao",
+    "zipCode": 97778
   }
 ]

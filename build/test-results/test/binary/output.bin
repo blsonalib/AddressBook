@@ -1,0 +1,5 @@
+wPerson{firstName='Lata', lastName='Shahare', phoneNumber=779898908, state='Maharashtra', city='jalgao', zipCode=77778}
+wPerson{firstName='Lata', lastName='Shahare', phoneNumber=779898908, state='Maharashtra', city='jalgao', zipCode=97778}
+wPerson{firstName='Lata', lastName='Shahare', phoneNumber=779898908, state='Maharashtra', city='jalgao', zipCode=97778}
+kPerson{firstName='Neha', lastName='Renge', phoneNumber=54765876, state='MP', city='Sivani', zipCode=76687}
+kPerson{firstName='siya', lastName='Jain', phoneNumber=54765876, state='Maha', city='Nagpur', zipCode=7687}
