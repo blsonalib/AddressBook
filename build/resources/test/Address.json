@@ -1,18 +1,18 @@
 [
   {
-    "firstName": "Jiya",
-    "lastName": "raypure",
-    "phoneNumber": 736756857,
-    "state": "Maharashtra",
-    "city": "nagpur",
-    "zipCode": 56565
-  },
-  {
     "firstName": "siya",
     "lastName": "Jain",
     "phoneNumber": 54765876,
     "state": "Maha",
     "city": "Nagpur",
     "zipCode": 7687
+  },
+  {
+    "firstName": "Jiya",
+    "lastName": "Raypure",
+    "phoneNumber": 736756857,
+    "state": "Maharashtra",
+    "city": "nagpur",
+    "zipCode": 56565
   }
 ]

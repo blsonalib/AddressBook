@@ -24,7 +24,6 @@ public class AddressBook implements AddressBookDataInterface {
         writeIntoJson(personDataList);
         return true;
     }
-
     @Override
     public boolean editPerson(Person person, String firstName) throws IOException {
         ArrayList<Person> personDataList = fileRead();
@@ -38,14 +37,16 @@ public class AddressBook implements AddressBookDataInterface {
         }
         writeIntoJson(personDataList);
         return true;
-
-
     }
 
 
     @Override
     public boolean deletePerson(String firstName) throws IOException {
-        return false;
+        ArrayList<Person> personDataList = fileRead();
+        personDataList.removeIf(person -> person.getFirstName().equals(firstName));
+        writeIntoJson(personDataList);
+
+        return true;
     }
 
     @Override
@@ -70,7 +71,6 @@ public class AddressBook implements AddressBookDataInterface {
       String json = gson.toJson(personDataList);
       try (FileWriter file = new FileWriter(filepath)) {
           file.write(json);
-          System.out.println("written to json");
       } catch (IOException e) {
           e.printStackTrace();
       }
