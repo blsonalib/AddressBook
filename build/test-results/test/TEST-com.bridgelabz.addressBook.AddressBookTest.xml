@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridgelabz.addressBook.AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T12:00:38" hostname="admin1-desktop" time="0.164">
+<testsuite name="com.bridgelabz.addressBook.AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-07T03:43:15" hostname="admin1-desktop" time="0.004">
   <properties/>
-  <testcase name="givenAddressBook_ToPrintAllEntrieOfPerson_ShouldReturnTrue" classname="com.bridgelabz.addressBook.AddressBookTest" time="0.164"/>
-  <system-out><![CDATA[FirstName :	siya		LastName :	Jain		PhoneNumber :	54765876
-
-State :	Maha		City :	Nagpur		ZipCode :	7687
-FirstName :	Jiya		LastName :	Raypure		PhoneNumber :	736756857
-
-State :	Maharashtra		City :	nagpur		ZipCode :	56565
-FirstName :	Neha		LastName :	Renge		PhoneNumber :	54765876
-
-State :	MP		City :	Sivani		ZipCode :	76687
-FirstName :	Lata		LastName :	Shahare		PhoneNumber :	779898908
-
-State :	Maharashtra		City :	jalgao		ZipCode :	97778
+  <testcase name="givenAddressBook_ToCreateNewAddressBook_ShouldReturnTrue" classname="com.bridgelabz.addressBook.AddressBookTest" time="0.004"/>
+  <system-out><![CDATA[File does not exists
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

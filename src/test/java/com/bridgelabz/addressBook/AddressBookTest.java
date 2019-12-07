@@ -57,5 +57,10 @@ public class AddressBookTest {
         boolean result=addressBookDataInterface.printEntries();
         Assert.assertEquals(true,result);
     }
-
+  @Test
+    public void givenAddressBook_ToCreateNewAddressBook_ShouldReturnTrue() throws IOException {
+        AddressBookOprationInterface bookOprationInterface=new AddressBookOperations();
+        boolean result=bookOprationInterface.createNewAddressBook("File");
+        Assert.assertEquals(true,result);
+  }
 }
